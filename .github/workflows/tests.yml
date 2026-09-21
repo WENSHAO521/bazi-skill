@@ -1,0 +1,33 @@
+name: 排盘脚本测试
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: 运行各方法的回归测试
+        run: |
+          set -e
+          status=0
+          for f in methods/*/scripts/test_*.py; do
+            echo "::group::$f"
+            if ! python3 "$f"; then
+              status=1
+            fi
+            echo "::endgroup::"
+          done
+          exit $status
