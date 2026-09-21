@@ -68,9 +68,7 @@ UNIX_JD = 2440587.5  # 1970-01-01 00:00 UTC
 
 GAN = "甲乙丙丁戊己庚辛壬癸"
 ZHI = "子丑寅卯辰巳午未申酉戌亥"
-GAN_WUXING = "木木火火土土金金水水"
 ZHI_LIST = list(ZHI)
-SHICHEN_SET = set(ZHI_LIST)
 
 # 十二节：黄经、名称、月支下标（寅=2 … 丑=1）
 JIE_DEFS = (

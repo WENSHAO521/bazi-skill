@@ -269,6 +269,8 @@ def cell_text(p, r):
         lines.append("地盘：%s（五宫，寄坤二宫，无独立天盘/门/神）" % r["dipan"][5])
         extra_p = r["tianqin_new_p"]
         lines.append("→随坤二宫飞到 %d 宫（干:%s 星:天禽）" % (extra_p, r["dipan"][5]))
+        if p == r["xun_gong"]:
+            lines.append("〔旬首落宫(%s)〕" % r["xun_gz"])
         return lines
     lines.append("地盘：%s" % r["dipan"][p])
     tg = r["tianpan_gan"].get(p, "—")
