@@ -31,6 +31,8 @@
   通行说法"）
 - `methods/qimen/references/gong-men-xing-shen-jieyi.md` — 九宫、八门、
   九星、八神的基本吉凶属性和常见解读方向
+- `methods/qimen/references/classical-texts.md` — 奇门遁甲经典典籍
+  （《烟波钓叟歌》《奇门遁甲统宗大全》等）与引用规范
 
 排盘计算时请先跑 `methods/qimen/scripts/paiju.py`，再读取参考文件做分析，
 不要口算或凭记忆中的口诀改动脚本给出的宫位。
@@ -134,8 +136,9 @@ python3 methods/qimen/scripts/paiju.py --yangdun --ju 3 --hour-ganzhi 庚午
 
 ## 第三阶段：分析阶段
 
-读取 `methods/qimen/references/gong-men-xing-shen-jieyi.md` 和
-`methods/qimen/references/paiju-guize.md`，按以下框架分析：
+读取 `methods/qimen/references/gong-men-xing-shen-jieyi.md`、
+`methods/qimen/references/paiju-guize.md` 和
+`methods/qimen/references/classical-texts.md`，按以下框架分析：
 
 ### 1. 整体格局概览
 
@@ -194,5 +197,7 @@ python3 methods/qimen/scripts/paiju.py --yangdun --ju 3 --hour-ganzhi 庚午
 - 本方法的天盘飞布/八门飞布/八神起点采用的是"转盘"简化模型（详见
   `methods/qimen/references/paiju-guize.md`），与部分专业软件的"飞盘"结果可能不同，
   分析时应如实告知用户这一点
+- 引用理论依据时优先参照 `methods/qimen/references/classical-texts.md` 里的典籍出处；
+  不确定具体出自哪部典籍时用"传统奇门理论认为……"泛称，不要编造引句
 - 分析结束时提醒用户："奇门遁甲分析仅供参考，人生的走向终究取决于自己
   的选择和行动。"

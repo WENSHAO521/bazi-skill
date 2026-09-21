@@ -9,6 +9,7 @@
 - `methods/xingming/scripts/wuge.py` — 五格计算脚本（收集齐笔画数后必须先跑；五格数值、五行、吉凶等级以脚本 stdout 为准）
 - `methods/xingming/references/wuge-suanfa.md` — 五格公式、三才五行生克判断规则、康熙笔画重要提醒
 - `methods/xingming/references/81-shuli.md` — 81 数吉凶对照表（与脚本内嵌数据一致）
+- `methods/xingming/references/classical-texts.md` — 五格剖象法的历史渊源说明（**注意：这不是中国古代典籍传统，源自 1918 年日本学者熊崎健翁，分析时不要暗示其为古老传承**）
 
 计算时请先跑 `methods/xingming/scripts/wuge.py`，再读取参考文件做分析，不要口算五格数值或凭记忆判断某个数字的吉凶。
 
@@ -72,7 +73,7 @@ python3 methods/xingming/scripts/wuge.py --surname 6 9 --given 4 14    # 复姓�
 
 ### Step 5：综合解读
 
-读取 `methods/xingming/references/wuge-suanfa.md` 与 `methods/xingming/references/81-shuli.md`，按以下框架展开解读：
+读取 `methods/xingming/references/wuge-suanfa.md`、`methods/xingming/references/81-shuli.md` 与 `methods/xingming/references/classical-texts.md`，按以下框架展开解读：
 
 1. **五格数理逐一解读**：结合脚本给出的吉凶等级与释义，说明天格（祖荫，一般不作为本人运势重点）、人格（性格与中年运，最重要）、地格（青少年与家庭基础）、外格（社交与人际）、总格（中年后与晚年走向）
 2. **三才五行配置**：说明天格→人格、人格→地格 的相生/相克/比和关系，解释这种配置在传统说法中大致对应的倾向（例如三才相生一般被认为整体较顺畅，三才相克则提示需要更多主动协调，但不代表注定不顺）
@@ -103,5 +104,6 @@ python3 methods/xingming/scripts/wuge.py --surname 6 9 --given 4 14    # 复姓�
 
 - 姓名学分析仅供传统文化参考，不应被视为科学结论或确定性预测
 - 避免使用"一定""必然""大凶""破财""绝症"等绝对化或恐吓性措辞；凶数可以说"传统上认为需留意""可作为提醒参考"
+- 不要暗示五格剖象法是"自古传下来的"，如实说明其 1918 年源自日本学者熊崎健翁（详见 `methods/xingming/references/classical-texts.md`）
 - 涉及改名等重大决定，提醒用户结合实际情况（如证件变更成本、他人称呼习惯等）理性决策，不要仅凭数理吉凶仓促决定
 - 分析结束时提醒用户："姓名数理仅供传统文化参考，不能决定命运，人生取决于自身的努力和选择。"
