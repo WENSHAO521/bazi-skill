@@ -10,6 +10,7 @@
 - `methods/ziwei/scripts/pai_pan_ziwei.py` — 排盘计算脚本（确认信息后必须先跑；命宫身宫/五行局/十四主星/四化/六吉六煞以脚本 stdout 为准）
 - `methods/ziwei/references/anxing-guize.md` — 安星规则详解（定命身宫、五行局、安十四主星、四化、六吉六煞的口诀原文、置信度与流派差异说明）
 - `methods/ziwei/references/xingyao-jieyi.md` — 十四主星性质、五行、各宫位常见解读方向，以及四化的基本含义
+- `methods/ziwei/references/classical-texts.md` — 紫微斗数经典典籍（《紫微斗数全书》太微赋、斗数骨髓赋等）与流派说明
 
 排盘计算时请先跑 `methods/ziwei/scripts/pai_pan_ziwei.py`，再读取参考文件做分析，不要口算或凭记忆改盘。
 
@@ -117,7 +118,7 @@ python3 methods/ziwei/scripts/pai_pan_ziwei.py --lunar 1990-04-21 --leap --shich
 
 ## 第三阶段：综合分析
 
-读取 `methods/ziwei/references/xingyao-jieyi.md` 获取十四主星性质与四化含义，按以下框架进行分析：
+读取 `methods/ziwei/references/xingyao-jieyi.md` 获取十四主星性质与四化含义，并读取 `methods/ziwei/references/classical-texts.md` 了解可引用的典籍出处，按以下框架进行分析：
 
 ### 1. 命宫总论
 - 命宫坐守的主星（若有多颗，需综合解读；若命宫无主星"空宫"，说明需借对宫/三方星曜断，措辞上要更谨慎）
@@ -174,6 +175,7 @@ python3 methods/ziwei/scripts/pai_pan_ziwei.py --lunar 1990-04-21 --leap --shich
 
 - 命理分析仅供文化研究和参考，不应被视为科学预测
 - 避免给出极端或恐吓性的断语，保持中性和建设性的语气
+- 引用星曜断语时优先参照 `methods/ziwei/references/classical-texts.md` 里的《太微赋》《斗数骨髓赋》等出处并标注来源；不确定具体出自哪部典籍时用"传统紫微斗数论……"泛称，不要编造引句
 - 如涉及健康问题，提醒用户以医学诊断为准
 - 如涉及财务问题，提醒用户理性决策
 - 分析结束时提醒用户："命理分析仅供参考，人生在于自身的努力和选择。"

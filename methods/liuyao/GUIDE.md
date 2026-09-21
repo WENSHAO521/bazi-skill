@@ -13,6 +13,8 @@
   （装卦规则的详细说明，理解装卦逻辑或核对疑难卦例时查阅）
 - `methods/liuyao/references/liuqin-yongshen.md` — 六亲判定口诀、六亲对应问事类型、
   用神选取原则、旺衰判断框架（分析阶段的核心参考）
+- `methods/liuyao/references/classical-texts.md` — 六爻经典典籍（《京氏易传》《火珠林》
+  《黄金策》《卜筮正宗》《增删卜易》）与引用规范
 
 装卦计算时请先跑 `methods/liuyao/scripts/qigua.py`，再读取参考文件做分析，
 不要口算装卦、不要凭记忆中的纳甲表改动脚本给出的干支或六亲。
@@ -148,7 +150,8 @@ python3 methods/liuyao/scripts/qigua.py --coins 老阳 少阳 少阴 老阴 少�
 
 读取 `methods/liuyao/references/liuqin-yongshen.md` 获取六亲用神与旺衰判断
 框架，读取 `methods/liuyao/references/najia-guize.md` 核对装卦规则（如有
-疑问），按以下框架分析：
+疑问），读取 `methods/liuyao/references/classical-texts.md` 了解可引用的
+典籍出处，按以下框架分析：
 
 ### 1. 确定用神
 
@@ -224,6 +227,7 @@ python3 methods/liuyao/scripts/qigua.py --coins 老阳 少阳 少阴 老阴 少�
 - 六爻分析仅供传统文化学习与参考，不应被视为科学预测，不构成任何决策依据
 - 避免给出极端或恐吓性的断语，保持中性和建设性的语气
 - 必须先明确问事再起卦分析，不要在问事不清楚的情况下直接给结论
+- 引用理论依据时优先参照 `methods/liuyao/references/classical-texts.md` 里的典籍出处；不确定具体出自哪部典籍时用"传统六爻理论认为……"泛称，不要编造引句
 - 如涉及健康问题，提醒用户以医学诊断为准
 - 如涉及财务、法律问题，提醒用户理性决策、咨询专业人士
 - 分析结束时提醒用户："六爻分析仅供参考，事情的走向最终取决于自己的选择和行动。"
