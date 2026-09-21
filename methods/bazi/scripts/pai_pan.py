@@ -28,7 +28,7 @@
    五鼠遁元：甲己甲子、乙庚丙子、丙辛戊子、丁壬庚子、戊癸壬子。
    锚点：庚日午时 = 壬午。
 
-5. 十神 / 藏干：与 references/wuxing-tables.md 同一张表，以日干为基准。
+5. 十神 / 藏干：与 methods/bazi/references/wuxing-tables.md 同一张表，以日干为基准。
    日干那一格十神为「—」。
 
 6. 大运：年干甲丙戊庚壬为阳年；乙丁己辛癸为阴年。
@@ -45,7 +45,7 @@
    朔用 Meeus 定朔（TT），再换北京日期。
    非闰月锚点：1990 农历四月廿一 = 1990-05-15。
 
-9. 神煞：与 references/shensha-table.md 同一张表。只输出命局命中的条目；
+9. 神煞：与 methods/bazi/references/shensha-table.md 同一张表。只输出命局命中的条目；
    时柱未知则不参与。
 
 真太阳时：默认钟表时间。若给了 --place 且时刻距时辰整点边界 ≤15 分钟，
@@ -118,7 +118,7 @@ ZI_SHI_GAN = {
     9: 8,
 }
 
-# 地支藏干：与 references/wuxing-tables.md 同一张表（本气、中气、余气）
+# 地支藏干：与 methods/bazi/references/wuxing-tables.md 同一张表（本气、中气、余气）
 CANGGAN = {
     "子": [("癸", "水")],
     "丑": [("己", "土"), ("癸", "水"), ("辛", "金")],
@@ -139,7 +139,7 @@ CANGGAN = {
 SHISHEN_SAME = ("比肩", "食神", "偏财", "偏官", "偏印")
 SHISHEN_DIFF = ("劫财", "伤官", "正财", "正官", "正印")
 
-# 神煞：与 references/shensha-table.md 同一张表
+# 神煞：与 methods/bazi/references/shensha-table.md 同一张表
 TIANYI = {
     "甲": ("丑", "未"),
     "戊": ("丑", "未"),
@@ -847,7 +847,7 @@ def compute_shensha(
     hour_zhi,
     sex,
 ):
-    """命中的神煞行。口径同 references/shensha-table.md；时柱未知则 hour_* 为 None。"""
+    """命中的神煞行。口径同 methods/bazi/references/shensha-table.md；时柱未知则 hour_* 为 None。"""
     gans = (year_gan, month_gan, day_gan, hour_gan)
     zhis = (year_zhi, month_zhi, day_zhi, hour_zhi)
     mdh_zhis = (month_zhi, day_zhi, hour_zhi)

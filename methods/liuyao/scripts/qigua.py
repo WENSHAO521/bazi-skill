@@ -514,7 +514,7 @@ def run(argv=None):
         bian_lines = apply_moving(ben_lines, moving_positions)
         bian = build_hexagram(bian_lines)
     else:
-        warnings.append("六爻全静（无动爻），请参考 references/liuqin-yongshen.md 中「六爻全静」的分析角度")
+        warnings.append("六爻全静（无动爻），请参考 methods/liuyao/references/liuqin-yongshen.md 中「六爻全静」的分析角度")
 
     if len(moving_positions) >= 4:
         warnings.append("动爻数达到%d条，超过3条时的取用请参考 GUIDE.md 边界情况表" % len(moving_positions))
