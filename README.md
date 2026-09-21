@@ -61,7 +61,7 @@ python3 methods/xingming/scripts/wuge.py --surname 7 --given 4 8
 | 紫薇斗数 | 《紫微斗数全书》（太微赋、斗数骨髓赋等核心赋文） | 见 `methods/ziwei/references/classical-texts.md`；安星规则的置信度和流派分歧见 `anxing-guize.md` |
 | 六爻 | 《京氏易传》《火珠林》《黄金策》《卜筮正宗》《增删卜易》 | 见 `methods/liuyao/references/classical-texts.md`；纳甲装卦规则见 `najia-guize.md` |
 | 奇门遁甲 | 《烟波钓叟歌》《奇门遁甲统宗大全》《太白阴经》等 | 见 `methods/qimen/references/classical-texts.md`；排局因流派分歧交由用户提供，布局规则见 `paiju-guize.md`（含置信度标注） |
-| 姓名学 | **非古籍传统**：1918 年日本学者熊崎健翁创立的五格剖象法（熊崎氏姓名学），1936 年传入台湾后流行于华人世界 | 见 `methods/xingming/references/classical-texts.md`，81 数吉凶通行版本见 `81-shuli.md` |
+| 姓名学 | 〔非古籍传统〕1918 年日本学者熊崎健翁创立的五格剖象法（熊崎氏姓名学），1936 年传入台湾后流行于华人世界 | 见 `methods/xingming/references/classical-texts.md`，81 数吉凶通行版本见 `81-shuli.md` |
 | 测字 | 北宋谢石为早期奠基人物，清代《测字秘牒》《字触》《拆字部汇考》三大名著 | 见 `methods/celizi/references/classical-texts.md`；拆字技法见 `chaizi-fa.md` |
 
 ## 项目结构
